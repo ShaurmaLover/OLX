@@ -1,0 +1,14 @@
+@mixin setsize($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin set-shadow(
+    $color: black,
+    $opacity: 0.5,
+    $x: 0,
+    $y: 0,
+    $blur: 10px,
+) {
+    box-shadow: $x $y $blur rgba($color, $opacity);
+}

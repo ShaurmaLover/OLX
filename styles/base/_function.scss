@@ -1,0 +1,10 @@
+@function pow($number, $exponent) {
+    $result: 1;
+    @if $number < 1 {
+        @error "The number must be greater than or equal to 1.";
+    }
+    @for $i from 1 through $exponent {
+        $result: $result * $number;
+    }
+    @return $result;
+}
